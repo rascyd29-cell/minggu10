@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Jwt {
     private $secret_key = 'your_secret_key_change_this_in_production';
     private $algorithm = 'HS256';
-    private $expiration = 604800; // 7 days in seconds
+    private $expiration = 604800; 
 
     public function __construct() {
         $this->secret_key = config_item('jwt_secret_key') ?: $this->secret_key;

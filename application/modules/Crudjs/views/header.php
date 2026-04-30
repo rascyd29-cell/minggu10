@@ -9,14 +9,18 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+    
         }
         
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
-            line-height: 1.6;
-        }
-        
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+}
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -183,6 +187,7 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             padding: 30px;
             margin-bottom: 20px;
+            width: 100%;
         }
         
         .form-group {
@@ -284,12 +289,12 @@
             white-space: nowrap;
         }
         
-        footer {
+         footer {
             background: #333;
             color: white;
             text-align: center;
             padding: 20px 0;
-            margin-top: 50px;
+            margin-top: auto; 
         }
         
         .back-link {

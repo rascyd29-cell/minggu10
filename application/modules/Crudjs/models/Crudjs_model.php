@@ -22,7 +22,7 @@ class Crudjs_model extends CI_Model {
         // Add image_url to each record
         foreach ($records as $record) {
             if ($record->image) {
-                $record->image_url = 'http://localhost/ci3_project/uploads/posts/' . $record->image;
+                $record->image_url = 'http://localhost/ci3_project/uploads/' . $record->image;
             } else {
                 $record->image_url = null;
             }
@@ -40,7 +40,7 @@ class Crudjs_model extends CI_Model {
         $record = $query->row();
         
         if ($record && $record->image) {
-            $record->image_url = 'http://localhost/ci3_project/uploads/posts/' . $record->image;
+            $record->image_url = 'http://localhost/ci3_project/uploads/' . $record->image;
         } else if ($record) {
             $record->image_url = null;
         }

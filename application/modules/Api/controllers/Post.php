@@ -92,7 +92,7 @@ class Post extends MX_Controller {
         if (empty($image_filename)) {
             return null;
         }
-        return 'http://localhost/ci3_project/uploads/posts/' . $image_filename;
+        return 'http://localhost/ci3_project/uploads/' . $image_filename;
     }
 
     /**
